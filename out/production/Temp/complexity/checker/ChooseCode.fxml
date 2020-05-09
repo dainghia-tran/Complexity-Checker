@@ -10,34 +10,52 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complexity.checker.ChooseCodeController">
    <children>
-      <Text fx:id="headerName" layoutX="379.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Header" textAlignment="CENTER">
+      <Text fx:id="headerName" layoutX="334.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Header" textAlignment="CENTER" AnchorPane.topAnchor="20.0">
          <font>
-            <Font size="24.0" />
+            <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <Text layoutX="371.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select File" textAlignment="CENTER">
+      <Text layoutX="308.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please Select File" textAlignment="CENTER" AnchorPane.topAnchor="90.0">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="22.0" />
          </font>
       </Text>
-      <TextField fx:id="path" layoutX="297.0" layoutY="120.0" />
-      <Button fx:id="javaButton" layoutX="489.0" layoutY="120.0" mnemonicParsing="false" onAction="#chooseJavaFile" text="JAVA" />
-      <Button fx:id="cppButton" layoutX="564.0" layoutY="120.0" mnemonicParsing="false" onAction="#chooseCPPFile" text="C++" />
-      <TableView fx:id="table" fixedCellSize="0.0" layoutX="46.0" layoutY="159.0" prefHeight="131.0" prefWidth="698.0">
+      <TextField fx:id="path" layoutX="53.0" layoutY="119.0" prefHeight="26.0" prefWidth="350.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="150.0" />
+      <Button fx:id="javaButton" layoutX="522.0" layoutY="150.0" mnemonicParsing="false" onAction="#chooseJavaFile" prefWidth="50.0" text="JAVA" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="cppButton" layoutX="591.0" layoutY="150.0" mnemonicParsing="false" onAction="#chooseCPPFile" prefWidth="50.0" text="C++" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="table" fixedCellSize="0.0" layoutX="154.0" layoutY="159.0" prefHeight="131.0" prefWidth="492.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="158.0" AnchorPane.topAnchor="200.0">
         <columns>
-          <TableColumn editable="false" prefWidth="52.79998779296875" text="Line No" />
-          <TableColumn prefWidth="199.99996948242188" text="Program Statement" />
-            <TableColumn prefWidth="71.20001220703125" text="Nkw" />
-            <TableColumn prefWidth="79.20001220703125" text="Nid" />
-            <TableColumn prefWidth="68.0" text="Nop" />
-            <TableColumn prefWidth="86.39996337890625" text="Nnv" />
-            <TableColumn prefWidth="75.20001220703125" text="Nsl" />
-            <TableColumn prefWidth="68.00006103515625" text="Cs" />
+          <TableColumn editable="false" prefWidth="50.0" text="Line No" />
+          <TableColumn prefWidth="200.0" text="Program Statement" />
+            <TableColumn prefWidth="40.0" text="Nkw" />
+            <TableColumn prefWidth="40.0" text="Nid" />
+            <TableColumn prefWidth="40.0" text="Nop" />
+            <TableColumn prefWidth="40.0" text="Nnv" />
+            <TableColumn prefWidth="40.0" text="Nsl" />
+            <TableColumn prefWidth="40.0" text="Cs" />
         </columns>
       </TableView>
-      <Button fx:id="editWeight" layoutX="231.0" layoutY="325.0" mnemonicParsing="false" onAction="#clickOnEditWeight" text="Edit Weight" />
-      <Button fx:id="home" layoutX="347.0" layoutY="325.0" mnemonicParsing="false" onAction="#clickOnHome" text="Home" />
-      <Button fx:id="addCode" layoutX="463.0" layoutY="325.0" mnemonicParsing="false" onAction="#clickOnAddCode" text="Add Code" />
-      <Button fx:id="save" layoutX="578.0" layoutY="325.0" mnemonicParsing="false" onAction="#clickOnSave" text="Save" />
+      <Button fx:id="editWeight" layoutX="183.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickOnEditWeight" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Edit Weight" textFill="WHITE" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="348.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="home" layoutX="285.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickOnHome" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Home" textFill="WHITE" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="348.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="addCode" layoutX="414.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickOnAddCode" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Add Code" textFill="WHITE" AnchorPane.rightAnchor="286.0" AnchorPane.topAnchor="348.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="save" layoutX="562.0" layoutY="348.0" mnemonicParsing="false" onAction="#clickOnSave" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Save" textFill="WHITE" AnchorPane.rightAnchor="158.0" AnchorPane.topAnchor="348.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>

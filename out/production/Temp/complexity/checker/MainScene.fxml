@@ -7,29 +7,29 @@
 
 <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" style="-fx-background-image: url('background.jpg');" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complexity.checker.MainSceneController">
     <children>
-        <Text layoutX="148.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEASURE CODE COMPLEXITY" textAlignment="CENTER">
+        <Text layoutX="148.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEASURE CODE COMPLEXITY" textAlignment="CENTER" AnchorPane.topAnchor="20.0">
             <font>
                 <Font name="System Bold" size="36.0" />
             </font>
         </Text>
-        <Text layoutX="277.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select What to Measure">
+        <Text layoutX="277.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select What to Measure" AnchorPane.topAnchor="90.0">
             <font>
                 <Font name="System Bold" size="22.0" />
             </font>
         </Text>
-      <Button fx:id="sizeVarMethod" layoutX="141.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadSVM" opacity="0.85" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Size, Variables and Methods" textFill="WHITE" AnchorPane.bottomAnchor="190.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="200.0">
+      <Button fx:id="sizeVarMethod" layoutX="141.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadSVM" opacity="0.85" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Size, Variables and Methods" textFill="WHITE" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="170.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Button fx:id="ctrlStructures" layoutX="483.0" layoutY="320.0" mnemonicParsing="false" onAction="#loadControlStructures" opacity="0.85" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Control Structures" textFill="WHITE" AnchorPane.bottomAnchor="70.0" AnchorPane.rightAnchor="150.0">
+      <Button fx:id="ctrlStructures" layoutX="483.0" layoutY="320.0" mnemonicParsing="false" onAction="#loadControlStructures" opacity="0.85" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Control Structures" textFill="WHITE" AnchorPane.bottomAnchor="110.0" AnchorPane.rightAnchor="150.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Button fx:id="coupling" layoutX="141.0" layoutY="320.0" mnemonicParsing="false" onAction="#loadCoupling" opacity="0.85" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Coupling" textFill="WHITE" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="150.0">
+      <Button fx:id="coupling" layoutX="141.0" layoutY="320.0" mnemonicParsing="false" onAction="#loadCoupling" opacity="0.85" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Coupling" textFill="WHITE" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="150.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>
-      <Button fx:id="inheritance" layoutX="483.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadInheritance" opacity="0.85" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Inheritance" textFill="WHITE" AnchorPane.bottomAnchor="190.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="200.0">
+      <Button fx:id="inheritance" layoutX="483.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadInheritance" opacity="0.85" prefHeight="60.0" prefWidth="175.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Inheritance" textFill="WHITE" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="170.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Button>

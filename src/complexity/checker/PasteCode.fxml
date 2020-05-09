@@ -46,7 +46,7 @@
             <TableColumn prefWidth="76.80010986328125" text="CI" />
         </columns>
       </TableView>
-      <Text fx:id="headerName" layoutX="339.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Header" AnchorPane.topAnchor="20.0">
+      <Text fx:id="headerName" layoutX="-1.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Header" textAlignment="CENTER" wrappingWidth="800.0" AnchorPane.topAnchor="20.0">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
