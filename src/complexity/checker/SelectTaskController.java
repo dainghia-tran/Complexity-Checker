@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SelectTaskController{
+public class SelectTaskController {
 
     public static int MENU_SELECTED_CODE;
     @FXML
@@ -33,6 +33,15 @@ public class SelectTaskController{
         Utilities.loadScene(event, "ChooseCode.fxml");
     }
 
+    public void loadTypeCode(ActionEvent event) throws IOException {
+        Utilities.loadScene(event, "TypeCode.fxml");
+    }
 
+    public void loadPasteCode(ActionEvent event) throws IOException {
+        Utilities.loadScene(event, "PasteCode.fxml");
+    }
 
+    public void loadEditWeight(ActionEvent event) throws IOException {
+        Utilities.loadScene(event, "EditWeight.fxml");
+    }
 }

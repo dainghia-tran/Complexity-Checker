@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.TableView;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
@@ -13,54 +13,38 @@ import java.util.ResourceBundle;
 
 import static complexity.checker.SelectTaskController.MENU_SELECTED_CODE;
 
-public class TypeCodeController implements Initializable {
-
-    @FXML
-    private TextArea typeCodeTextArea;
-
-    @FXML
-    private TextArea methodTextArea;
+public class EditWeightController implements Initializable {
 
     @FXML
     private Text headerName;
 
     @FXML
-    private Button checkButton;
-
-    @FXML
-    private Button editWeightButton;
+    private TableView<?> table;
 
     @FXML
     private Button homeButton;
 
     @FXML
-    private Button addCodeButton;
+    private Button cancelButton;
 
     @FXML
     private Button saveButton;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         Utilities.changeHeaderName(headerName, MENU_SELECTED_CODE);
     }
 
-    public void clickOnCheck(ActionEvent event){
-        //click check button
-    }
-
-    public void clickOnEditWeight(ActionEvent event){
-        Utilities.editWeight();
-    }
-
-    public void clickOnHome(ActionEvent event) throws IOException {
+    public void onClickHome(ActionEvent event) throws IOException {
         Utilities.goToHome(event);
     }
 
-    public void clickOnAddCode(ActionEvent event){
-        Utilities.addCode();
+    public void onClickCancel(ActionEvent event){
+        //cancel code here
     }
 
-    public void clickOnSave(ActionEvent event){
+    public void onClickSave(ActionEvent event){
         Utilities.save();
     }
 }

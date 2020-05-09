@@ -18,10 +18,10 @@
          <font>
             <Font size="14.0" />
          </font></Text>
-      <Button fx:id="checkButton" layoutX="385.0" layoutY="213.0" mnemonicParsing="false" text="CHECK" />
-      <Button fx:id="editWeightButton" layoutX="152.0" layoutY="357.0" mnemonicParsing="false" text="Edit Weight" />
-      <Button fx:id="homeButton" layoutX="278.0" layoutY="357.0" mnemonicParsing="false" text="Home" />
-      <Button fx:id="addCodeButton" layoutX="480.0" layoutY="357.0" mnemonicParsing="false" text="Add Code" />
-      <Button fx:id="saveButton" layoutX="606.0" layoutY="357.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="checkButton" layoutX="385.0" layoutY="213.0" mnemonicParsing="false" onAction="#clickOnCheck" text="CHECK" />
+      <Button fx:id="editWeightButton" layoutX="152.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnEditWeight" text="Edit Weight" />
+      <Button fx:id="homeButton" layoutX="278.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnHome" text="Home" />
+      <Button fx:id="addCodeButton" layoutX="480.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnAddCode" text="Add Code" />
+      <Button fx:id="saveButton" layoutX="606.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnSave" text="Save" />
    </children>
 </AnchorPane>

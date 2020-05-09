@@ -23,14 +23,17 @@
       <TextField fx:id="path" layoutX="297.0" layoutY="120.0" />
       <Button fx:id="javaButton" layoutX="489.0" layoutY="120.0" mnemonicParsing="false" onAction="#chooseJavaFile" text="JAVA" />
       <Button fx:id="cppButton" layoutX="564.0" layoutY="120.0" mnemonicParsing="false" onAction="#chooseCPPFile" text="C++" />
-      <TableView fx:id="table" layoutX="225.0" layoutY="159.0" prefHeight="131.0" prefWidth="394.0">
+      <TableView fx:id="table" fixedCellSize="0.0" layoutX="46.0" layoutY="159.0" prefHeight="131.0" prefWidth="698.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn editable="false" prefWidth="52.79998779296875" text="Line No" />
+          <TableColumn prefWidth="199.99996948242188" text="Program Statement" />
+            <TableColumn prefWidth="71.20001220703125" text="Nkw" />
+            <TableColumn prefWidth="79.20001220703125" text="Nid" />
+            <TableColumn prefWidth="68.0" text="Nop" />
+            <TableColumn prefWidth="86.39996337890625" text="Nnv" />
+            <TableColumn prefWidth="75.20001220703125" text="Nsl" />
+            <TableColumn prefWidth="68.00006103515625" text="Cs" />
         </columns>
-         <columnResizePolicy>
-            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-         </columnResizePolicy>
       </TableView>
       <Button fx:id="editWeight" layoutX="231.0" layoutY="325.0" mnemonicParsing="false" onAction="#clickOnEditWeight" text="Edit Weight" />
       <Button fx:id="home" layoutX="347.0" layoutY="325.0" mnemonicParsing="false" onAction="#clickOnHome" text="Home" />

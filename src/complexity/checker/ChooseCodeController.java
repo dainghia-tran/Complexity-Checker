@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -54,6 +55,7 @@ public class ChooseCodeController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         Utilities.changeHeaderName(headerName, MENU_SELECTED_CODE);
         fileChooser = new FileChooser();
+        TableColumn<?, String> lineNo = new TableColumn<>("Line No");
     }
 
     private void setPath(String pathToFile){
