@@ -5,12 +5,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import table.object.ChooseCodeTable;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,7 +34,7 @@ public class ChooseCodeController implements Initializable {
     private Button cppButton;
 
     @FXML
-    private TableView<?> table;
+    private TableView<ChooseCodeTable> table;
 
     @FXML
     private Button editWeight;
@@ -55,7 +55,8 @@ public class ChooseCodeController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         Utilities.changeHeaderName(headerName, MENU_SELECTED_CODE);
         fileChooser = new FileChooser();
-        TableColumn<?, String> lineNo = new TableColumn<>("Line No");
+        table = new TableView<ChooseCodeTable>();
+        setTableData();
     }
 
     private void setPath(String pathToFile){
@@ -106,6 +107,10 @@ public class ChooseCodeController implements Initializable {
 
     public void clickOnSave(ActionEvent event){
         Utilities.save();
+    }
+
+    public void setTableData(){
+
     }
 }
 
