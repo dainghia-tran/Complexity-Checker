@@ -7,19 +7,31 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complexity.checker.SelectTaskController">
    <children>
-      <Button fx:id="pasteCode" layoutX="299.0" layoutY="272.0" mnemonicParsing="false" onAction="#loadPasteCode" prefHeight="50.0" prefWidth="200.0" text="Paste Code" />
-      <Text layoutX="241.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEASURE CODE COMPLEXITY">
+      <Button fx:id="pasteCode" layoutX="274.0" layoutY="272.0" mnemonicParsing="false" onAction="#loadPasteCode" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Paste Code" textFill="WHITE">
          <font>
-            <Font size="24.0" />
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Text layoutX="173.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEASURE CODE COMPLEXITY" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
          </font>
       </Text>
-      <Text layoutX="342.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select What to DO">
+      <Text layoutX="305.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select What to DO" AnchorPane.topAnchor="89.259765625">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="22.0" />
          </font>
       </Text>
-      <Button fx:id="chooseCode" layoutX="299.0" layoutY="148.0" mnemonicParsing="false" onAction="#loadChooseCode" prefHeight="50.0" prefWidth="200.0" text="Choose Code" />
-      <Button fx:id="typeCode" layoutX="299.0" layoutY="208.0" mnemonicParsing="false" onAction="#loadTypeCode" prefHeight="50.0" prefWidth="200.0" text="Type Code" />
-      <Button fx:id="editWeight" layoutX="300.0" layoutY="334.0" mnemonicParsing="false" onAction="#loadEditWeight" prefHeight="50.0" prefWidth="200.0" text="Edit Weight" />
+      <Button fx:id="chooseCode" layoutX="274.0" layoutY="148.0" mnemonicParsing="false" onAction="#loadChooseCode" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Choose Code" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Button fx:id="typeCode" layoutX="274.0" layoutY="208.0" mnemonicParsing="false" onAction="#loadTypeCode" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Type Code" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
+      <Button fx:id="editWeight" layoutX="275.0" layoutY="334.0" mnemonicParsing="false" onAction="#loadEditWeight" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Edit Weight" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font></Button>
    </children>
 </AnchorPane>

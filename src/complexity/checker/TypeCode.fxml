@@ -8,20 +8,35 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complexity.checker.TypeCodeController">
    <children>
-      <TextArea fx:id="typeCodeTextArea" layoutX="104.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" promptText="Type code here" />
-      <TextArea fx:id="methodTextArea" layoutX="506.0" layoutY="125.0" prefHeight="200.0" prefWidth="200.0" promptText="Method" />
-      <Text fx:id="headerName" layoutX="389.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+      <TextArea fx:id="typeCodeTextArea" layoutX="104.0" layoutY="125.0" prefHeight="170.0" prefWidth="200.0" promptText="Type code here" AnchorPane.leftAnchor="110.0" AnchorPane.topAnchor="150.0" />
+      <TextArea fx:id="methodTextArea" layoutX="506.0" layoutY="125.0" prefHeight="170.0" prefWidth="200.0" promptText="Method" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="150.0" />
+      <Text fx:id="headerName" layoutX="363.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" AnchorPane.topAnchor="20.0">
          <font>
-            <Font size="24.0" />
+            <Font name="System Bold" size="36.0" />
          </font></Text>
-      <Text layoutX="389.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type Code">
+      <Text layoutX="345.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type Code" AnchorPane.topAnchor="90.0">
          <font>
-            <Font size="14.0" />
+            <Font name="System Bold" size="22.0" />
          </font></Text>
-      <Button fx:id="checkButton" layoutX="385.0" layoutY="213.0" mnemonicParsing="false" onAction="#clickOnCheck" text="CHECK" />
-      <Button fx:id="editWeightButton" layoutX="152.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnEditWeight" text="Edit Weight" />
-      <Button fx:id="homeButton" layoutX="278.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnHome" text="Home" />
-      <Button fx:id="addCodeButton" layoutX="480.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnAddCode" text="Add Code" />
-      <Button fx:id="saveButton" layoutX="606.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnSave" text="Save" />
+      <Button fx:id="checkButton" layoutX="360.0" layoutY="215.0" mnemonicParsing="false" onAction="#clickOnCheck" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="CHECK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="editWeightButton" layoutX="110.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnEditWeight" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Edit Weight" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="homeButton" layoutX="263.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnHome" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="addCodeButton" layoutX="440.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnAddCode" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Add Code" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="saveButton" layoutX="590.0" layoutY="357.0" mnemonicParsing="false" onAction="#clickOnSave" prefWidth="100.0" style="-fx-background-color: linear-gradient(to bottom, #545a63 0%, #000000 51%, #545a63 100%);" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
    </children>
 </AnchorPane>
