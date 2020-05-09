@@ -1,27 +1,37 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package complexity.checker;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-import javafx.fxml.Initializable;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 
-/**
- * FXML Controller class
- *
- * @author Kennen
- */
-public class SVMSceneController implements Initializable {
+import java.io.IOException;
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+import static complexity.checker.SelectTaskController.MENU_SELECTED_CODE;
+
+public class SVMSceneController {
+
+    @FXML
+    private Button size;
+
+    @FXML
+    private Button var;
+
+    @FXML
+    private Button method;
+
+    public void loadSVMSize(ActionEvent event) throws IOException {
+        MENU_SELECTED_CODE = 11;
+        Utilities.loadScene(event, "SelectTask.fxml");
+    }
+
+    public void loadSVMVariables(ActionEvent event) throws IOException {
+        MENU_SELECTED_CODE = 12;
+        Utilities.loadScene(event, "SelectTask.fxml");
+    }
+
+    public void loadSVMMethods(ActionEvent event) throws IOException {
+        MENU_SELECTED_CODE = 13;
+        Utilities.loadScene(event, "SelectTask.fxml");
+    }
+
 }

@@ -17,9 +17,9 @@
                 <Font size="16.0" />
             </font>
         </Text>
-      <Button fx:id="sizeVarMethod" layoutX="141.0" layoutY="200.0" mnemonicParsing="false" onAction="#activeSVM" prefHeight="50.0" prefWidth="200.0" text="Size, Variables and Methods" />
-      <Button fx:id="ctrlStructures" layoutX="483.0" layoutY="320.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Control Structures" />
-      <Button fx:id="coupling" layoutX="141.0" layoutY="320.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Coupling" />
-      <Button fx:id="inheritance" layoutX="483.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Inheritance" />
+      <Button fx:id="sizeVarMethod" layoutX="141.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadSVM" prefHeight="50.0" prefWidth="200.0" text="Size, Variables and Methods" />
+      <Button fx:id="ctrlStructures" layoutX="483.0" layoutY="320.0" mnemonicParsing="false" onAction="#loadControlStructures" prefHeight="50.0" prefWidth="200.0" text="Control Structures" />
+      <Button fx:id="coupling" layoutX="141.0" layoutY="320.0" mnemonicParsing="false" onAction="#loadCoupling" prefHeight="50.0" prefWidth="200.0" text="Coupling" />
+      <Button fx:id="inheritance" layoutX="483.0" layoutY="200.0" mnemonicParsing="false" onAction="#loadInheritance" prefHeight="50.0" prefWidth="200.0" text="Inheritance" />
     </children>
 </AnchorPane>

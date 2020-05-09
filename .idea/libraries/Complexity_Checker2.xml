@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Complexity-Checker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Complexity-Checker.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
