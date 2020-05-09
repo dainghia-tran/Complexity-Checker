@@ -1,5 +1,7 @@
 package complexity.checker;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -8,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -112,15 +115,33 @@ public class ChooseCodeController implements Initializable {
 
     public void setTableData(){
         //Initialize column
-        TableColumn<ChooseCodeTable, Integer> count = new TableColumn<>("Count");
-        TableColumn<ChooseCodeTable, Integer> className = new TableColumn<>("Class Name");
-        TableColumn<ChooseCodeTable, Integer> ndi = new TableColumn<>("NDI");
-        TableColumn<ChooseCodeTable, Integer> nidi = new TableColumn<>("NIDI");
-        TableColumn<ChooseCodeTable, Integer> ti = new TableColumn<>("TI");
-        TableColumn<ChooseCodeTable, Integer> ci = new TableColumn<>("CI");
+        TableColumn<ChooseCodeTable, Integer> lineNo = new TableColumn<>("Line No");
+        TableColumn<ChooseCodeTable, String> programStatement = new TableColumn<>("Program Statements");
+        TableColumn<ChooseCodeTable, Integer> nkw = new TableColumn<>("Nkw");
+        TableColumn<ChooseCodeTable, Integer> nid = new TableColumn<>("Nid");
+        TableColumn<ChooseCodeTable, Integer> nop = new TableColumn<>("Nop");
+        TableColumn<ChooseCodeTable, Integer> nnv = new TableColumn<>("Nnv");
+        TableColumn<ChooseCodeTable, Integer> nsl = new TableColumn<>("Nsl");
+        TableColumn<ChooseCodeTable, Integer> cs = new TableColumn<>("Cs");
 
         //Set content to table
+        lineNo.setCellValueFactory(new PropertyValueFactory<>("lineNo"));
+        programStatement.setCellValueFactory(new PropertyValueFactory<>("programStatement"));
+        nkw.setCellValueFactory(new PropertyValueFactory<>("nkw"));
+        nid.setCellValueFactory(new PropertyValueFactory<>("nid"));
+        nop.setCellValueFactory(new PropertyValueFactory<>("nop"));
+        nnv.setCellValueFactory(new PropertyValueFactory<>("nnv"));
+        nsl.setCellValueFactory(new PropertyValueFactory<>("nsl"));
+        cs.setCellValueFactory(new PropertyValueFactory<>("cs"));
 
+        //Set content
+        ObservableList<ChooseCodeTable> list = getRowList();
+        table.setItems(list);
+        table.getColumns().addAll(lineNo, programStatement, nkw, nid, nop, nnv, nsl, cs);
+    }
+
+    private ObservableList<ChooseCodeTable> getRowList() {
+        return FXCollections.observableArrayList(); //value
     }
 }
 

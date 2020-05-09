@@ -1,11 +1,17 @@
 package complexity.checker;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
+import table.object.ChooseCodeTable;
+import table.object.EditCodeWeightTable;
 
 import java.io.IOException;
 import java.net.URL;
@@ -19,7 +25,7 @@ public class EditWeightController implements Initializable {
     private Text headerName;
 
     @FXML
-    private TableView<?> table;
+    private TableView<EditCodeWeightTable> table;
 
     @FXML
     private Button homeButton;
@@ -46,5 +52,24 @@ public class EditWeightController implements Initializable {
 
     public void onClickSave(ActionEvent event){
         Utilities.save();
+    }
+
+    public void setTableData(){
+        //Initialize column
+        TableColumn<EditCodeWeightTable, Integer> count = new TableColumn<>("Count");
+        TableColumn<EditCodeWeightTable, String> className = new TableColumn<>("Class Name");
+
+        //Set content to table
+        count.setCellValueFactory(new PropertyValueFactory<>("count"));
+        className.setCellValueFactory(new PropertyValueFactory<>("className"));
+
+        //Set content
+        ObservableList<EditCodeWeightTable> list = getRowList();
+        table.setItems(list);
+        table.getColumns().addAll(count, className);
+    }
+
+    private ObservableList<EditCodeWeightTable> getRowList() {
+        return FXCollections.observableArrayList(); //value
     }
 }

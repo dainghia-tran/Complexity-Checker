@@ -10,7 +10,7 @@
 
 <AnchorPane prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="complexity.checker.ChooseCodeController">
    <children>
-      <Text fx:id="headerName" layoutX="334.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Header" textAlignment="CENTER" AnchorPane.topAnchor="20.0">
+      <Text fx:id="headerName" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Header" textAlignment="CENTER" wrappingWidth="800.0" AnchorPane.topAnchor="20.0">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
